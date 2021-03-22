@@ -1,21 +1,6 @@
-# Simple docker action
+# quality-engineering-github-actions
+GitHub Actions created by Quality Engineering
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+## Using These Actions
 
-## Inputs
-
-### `who-to-greet`
-
-**Required** The name of the person to greet. Default `"World"`.
-
-## Outputs
-
-### `time`
-
-The time we greeted you.
-
-## Example usage
-
-uses: actions/simple-docker-action@v1
-with:
-  who-to-greet: 'Mona the Octocat'
+GitHub does not currently support natively utilizing actions from other private repositories in an organization, so this repository must be checked out as part of your Actions workflow.
