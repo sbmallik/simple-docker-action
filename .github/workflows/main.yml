@@ -14,7 +14,6 @@ jobs:
         who-to-greet: 'Mona the Octocat'
     - name: Get the output time
       run: echo "Hello ${{ steps.hello.outputs.whotogreet }}! The time was ${{ steps.hello.outputs.time }}"
-jobs:
   run_helm_job:
     runs-on: ubuntu-latest
     name: A job to run helm
