@@ -22,3 +22,5 @@ jobs:
       uses: actions/checkout@v2
     - name: Hello world action step
       uses: ./docker-helm
+      env:
+        VERSION: 2.12.0
