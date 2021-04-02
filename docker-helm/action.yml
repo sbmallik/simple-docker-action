@@ -1,5 +1,12 @@
-name: 'Hello world'
-description: 'Greet someone and record the time'
+name: 'Helm command demo'
+description: 'Execute a helm command inside a docker container."
+inputs:
+  command-arguments:
+    description: 'helm command arguments'
+    required: true
+    default: 'version'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.command-arguments }}
