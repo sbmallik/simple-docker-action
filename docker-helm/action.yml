@@ -1,5 +1,5 @@
 name: 'Helm command demo'
-description: 'Execute a helm command inside a docker container."
+description: 'Execute a helm command inside a docker container'
 inputs:
   command-arguments:
     description: 'helm command arguments'
